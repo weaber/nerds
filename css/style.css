@@ -1,3 +1,209 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+
+  --basic-grey: #E1E1E1;
+  --basic-grey-dark: #DFDFDF;
+  --basic-grey-extra-dark: #D5D5D5;
+
+  --basic-special: #4D4D4D;
+  --basic-special-dark: #283136;
+
+  --basic-red: #FB565A;
+  --basic-red-dark: #E74246;
+  --basic-red-extra-dark: #D7373B;
+
+  --basic-green: #00CA74;
+  --basic-green-dark: #00BC6C;
+  --basic-green-extra-dark: #00AA62;
+
+  --basic-yellow: #EFC84A;;
+  --basic-yellow-dark: #EAB534;
+  --basic-yellow-extra-dark: #E5A722;
+
+  --basic-smoky-white: #EEEEEE;
+  --basic-white: #FFFFFF;
+}
+
+/* Global */
+
 body {
-  font-family: 'Roboto', sans-serif;
+  min-width: 1200px;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: var(--basic-special-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  text-transform: uppercase;
+  color: var(--basic-white);
+
+  background-color: var(--basic-red);
+}
+
+.button:hover {
+  background-color: var(--basic-red-dark);
+}
+
+.button:active {
+  background-color: var(--basic-red-extra-dark);
+}
+
+/* Header */
+
+.main-header {
+  background-color: var(--basic-smoky-white);
+  background-position: top center;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.cart {
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.cart:hover,
+.cart:focus {
+  color: var(--basic-red);
+}
+
+/* Main */
+
+.main {
+  background-color: var(--basic-white);
+}
+
+/* Advantages */
+
+.advantages {
+  background-color: var(--basic-smoky-white);
+  background-position: top center;
+}
+
+.advantages-item p {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.advantages-item span {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Services */
+
+.services-item h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.services-item p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Promo */
+
+.promo-right b {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.promo-right span {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.promo-right p {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.orders-list-item {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.promo-left p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.promo-features b {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.promo-features p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* Partners */
+
+.partners-item a {
+  opacity: 0.2;
+}
+
+.partners-item a:hover {
+  opacity: 1;
+}
+
+.partners-item a:active {
+  opacity: 0.1;
+}
+
+/* Footer */
+
+.contacts-container {
+  background-image: url("../img/map.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.сontacts p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contacts p:nth-child(1) {
+  text-transform: uppercase;
+}
+
+.footer-benefits p {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-benefits span {
+  font-size: 16px;
+  line-height: 22px;
 }
