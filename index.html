@@ -163,8 +163,15 @@
   <section class="modal">
     <p>Напишите нам</p>
     <button>Закрыть</button>
-    <!-- Форма -->
-    <button>Отправить</button>
+    <form>
+      <label for="user-name">Ваше имя:</label>
+      <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+      <label for="user-email">Ваш email:</label>
+      <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
+      <label for="feedback">Текст письма:</label>
+      <textarea id="feedback" placeholder="В свободной форме"></textarea>
+      <button class="button" type="submit">Отправить</button>
+    </form>
   </section>
 </body>
 </html>
