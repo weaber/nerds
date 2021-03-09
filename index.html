@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,32 +23,42 @@
       </ul>
       <a class="cart" href="blank.html">Корзина</a>
     </nav>
-  </header>
 
-  <main class="container">
-    <h1>Магазин готовых шаблонов Nerds</h1>
+    <section class="advantages container">
+      <h2 class="visually-hidden">Преимущества</h2>
 
-    <section class="advantages">
-      <h2>Преимущества</h2>
-      <!-- Контролы для слайдера -->
+      <input type="radio" id="btn-1" name="toggle" checked>
+      <input type="radio" id="btn-2" name="toggle">
+      <input type="radio" id="btn-3" name="toggle">
+
+      <div class="slider-controls">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
+      </div>
+
       <ul class="advantages-list">
         <li class="advantages-item">
-          <p>Долго, дорого, скурпулезно</p>
-          <span>Математически выверенный дизайн для вашего сайта или мобильного приложения.</span>
-          <a class="button" href="">Узнать больше</a>
+          <h3>Долго, дорого, скурпулезно</h3>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a class="button advantages-item-button" href="">Узнать больше</a>
         </li>
         <li class="advantages-item">
-          <p>Любим математику как никто другой</p>
-          <span>Никакого креатива, только математические формулы, для расчета идеальных пропорций.</span>
-          <a class="button" href="">Узнать больше</a>
+          <h3>Любим математику как никто другой</h3>
+          <p>Никакого креатива, только математические формулы, для расчета идеальных пропорций.</p>
+          <a class="button advantages-item-button" href="">Узнать больше</a>
         </li>
         <li class="advantages-item">
-          <p>Только ночь, только хардкор</p>
-          <span>Работать днем как все? Мы против этого. Ближе к полуночи работа только начинается.</span>
-          <a class="button" href="">Узнать больше</a>
+          <h3>Только ночь, только хардкор</h3>
+          <p>Работать днем как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a class="button advantages-item-button" href="">Узнать больше</a>
         </li>
       </ul>
     </section>
+  </header>
+
+  <main class="container">
+    <h1 class="visually-hidden">Магазин готовых шаблонов Nerds</h1>
 
     <section class="services">
       <h2>Услуги</h2>
@@ -87,7 +97,7 @@
       </div>
 
       <div class="promo-left">
-        <img src="img/nerds-illustration 1.png" width="360" height="208" alt="Промо">
+        <img src="img/nerds-illustration.png" width="360" height="208" alt="Промо">
         <p>С 2008 года любим точность во всем:</p>
 
         <div class="promo-features">
