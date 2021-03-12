@@ -12,7 +12,6 @@
 <body class="page-body">
   <header class="main-header">
     <div class="container">
-      <h1 class="visually-hidden main-title">Магазин готовых шаблонов</h1>
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логитип Nerds">
@@ -27,6 +26,7 @@
           <a class="cart" href="blank.html">Корзина</a>
         </ul>
       </nav>
+      <h1 class="visually-hidden main-title">Магазин готовых шаблонов</h1>
     </div>
   </header>
 
@@ -34,9 +34,9 @@
     <section class="advantages">
       <div class="container">
         <h2 class="visually-hidden">Преимущества</h2>
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">
+        <input class="slider-input" type="radio" id="btn-1" name="toggle" checked>
+        <input class="slider-input" type="radio" id="btn-2" name="toggle">
+        <input class="slider-input" type="radio" id="btn-3" name="toggle">
         <div class="slider-controls">
           <label for="btn-1"></label>
           <label for="btn-2"></label>
@@ -171,7 +171,7 @@
   <section class="modal">
     <p>Напишите нам</p>
     <button>Закрыть</button>
-    <form>
+    <form method="get" action="https://echo.htmlacademy.ru/">
       <label for="user-name">Ваше имя:</label>
       <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
       <label for="user-email">Ваш email:</label>

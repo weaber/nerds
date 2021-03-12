@@ -11,31 +11,72 @@
 
 <body class="page-body inner-page">
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="http://placehold.it/160x65" width="160" height="65" alt="Логитип Nerds">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a class="active" href="catalog.html">Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
-      <a class="cart" href="blank.html">Корзина</a>
-    </nav>
+    <div class="container">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логитип Nerds">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a class="active" href="catalog.html">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <a class="cart" href="blank.html">Корзина</a>
+        </ul>
+      </nav>
+      <h1 class="main-title">Магазин готовых шаблонов</h1>
+    </div>
   </header>
 
   <main class="container">
-    <h1 class="page-title">Магазин готовых шаблонов</h1>
-
     <secton class="filter">
-      <h2>Фильтр товаров</h2>
-      <p>Стоимость:</p>
-      <!-- Слайдер -->
-      <!-- Форма сортировки -->
-      <!-- Сетка -->
-      <!-- Особенности -->
-      <!-- Кнопка Показать -->
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+
+      <form method="get" action="https://echo.htmlacademy.ru/">
+        <fieldset class="filter-item">
+          <legend>Стоимость:</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="filter-item">
+          <legend>Сетка:</legend>
+          <input name="grid" id="radio-1" type="radio" value="adaptive" checked>
+          <label for="radio-1">Адаптивная</label>
+          <input name="grid" id="radio-2" type="radio" value="fixed">
+          <label for="radio-2">Фиксированная</label>
+          <input name="grid" id="radio-3" type="radio" value="flex">
+          <label for="radio-3">Резиновая</label>
+        </fieldset>
+
+        <fieldset class="filter-item">
+          <legend>Особенности:</legend>
+          <input name="slide" id="check-1" type="checkbox" checked>
+          <label for="check-1">Слайдер</label>
+          <input name="advantages" id="check-2" type="checkbox">
+          <label for="check-2">Блок преимуществ</label>
+          <input name="news" id="check-3" type="checkbox" checked>
+          <label for="check-3">Новости</label>
+          <input name="gallery" id="check-4" type="checkbox">
+          <label for="check-4">Галерея</label>
+          <input name="cart" id="check-5"  type="checkbox">
+          <label for="check-5">Корзина</label>
+        </fieldset>
+        <input class="button" type="submit" value="Показать">
+      </form>
     </secton>
 
     <section>
