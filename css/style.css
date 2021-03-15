@@ -616,6 +616,8 @@ main {
   line-height: 19px;
 }
 
+/* Sort */
+
 .sort-title {
   font-size: 18px;
   line-height: 30px;
@@ -636,6 +638,13 @@ main {
   list-style: none;
 }
 
+/* Catalog */
+
+.catalog-list {
+  list-style: none;
+  outline: 2px solid yellow;
+}
+
 .catalog-item-title {
   font-size: 18px;
   line-height: 30px;
@@ -653,6 +662,8 @@ main {
 .catalog-item-button {
   width: 200px;
 }
+
+/* Pagination */
 
 .pagination-list {
   list-style: none;
