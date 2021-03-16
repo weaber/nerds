@@ -30,56 +30,55 @@
     </div>
   </header>
 
-  <main class="container">
-    <secton class="filter">
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-
-      <form method="get" action="https://echo.htmlacademy.ru/">
-        <fieldset class="filter-item">
-          <legend>Стоимость:</legend>
-          <div class="range-filter">
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+  <main class="container catalog-columns">
+    <div class="filters">
+      <secton>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form method="get" action="https://echo.htmlacademy.ru/">
+          <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
               </div>
-              <div class="toggle toggle-min"></div>
-              <div class="toggle toggle-max"></div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
             </div>
-            <div class="price-controls">
-              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-            </div>
-          </div>
-        </fieldset>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend>Сетка:</legend>
+            <input name="grid" id="radio-1" type="radio" value="adaptive" checked>
+            <label for="radio-1">Адаптивная</label>
+            <input name="grid" id="radio-2" type="radio" value="fixed">
+            <label for="radio-2">Фиксированная</label>
+            <input name="grid" id="radio-3" type="radio" value="flex">
+            <label for="radio-3">Резиновая</label>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend>Особенности:</legend>
+            <input name="slide" id="check-1" type="checkbox" checked>
+            <label for="check-1">Слайдер</label>
+            <input name="advantages" id="check-2" type="checkbox">
+            <label for="check-2">Блок преимуществ</label>
+            <input name="news" id="check-3" type="checkbox" checked>
+            <label for="check-3">Новости</label>
+            <input name="gallery" id="check-4" type="checkbox">
+            <label for="check-4">Галерея</label>
+            <input name="cart" id="check-5"  type="checkbox">
+            <label for="check-5">Корзина</label>
+          </fieldset>
+          <input class="button" type="submit" value="Показать">
+        </form>
+      </secton>
+    </div>
 
-        <fieldset class="filter-item">
-          <legend>Сетка:</legend>
-          <input name="grid" id="radio-1" type="radio" value="adaptive" checked>
-          <label for="radio-1">Адаптивная</label>
-          <input name="grid" id="radio-2" type="radio" value="fixed">
-          <label for="radio-2">Фиксированная</label>
-          <input name="grid" id="radio-3" type="radio" value="flex">
-          <label for="radio-3">Резиновая</label>
-        </fieldset>
-
-        <fieldset class="filter-item">
-          <legend>Особенности:</legend>
-          <input name="slide" id="check-1" type="checkbox" checked>
-          <label for="check-1">Слайдер</label>
-          <input name="advantages" id="check-2" type="checkbox">
-          <label for="check-2">Блок преимуществ</label>
-          <input name="news" id="check-3" type="checkbox" checked>
-          <label for="check-3">Новости</label>
-          <input name="gallery" id="check-4" type="checkbox">
-          <label for="check-4">Галерея</label>
-          <input name="cart" id="check-5"  type="checkbox">
-          <label for="check-5">Корзина</label>
-        </fieldset>
-        <input class="button" type="submit" value="Показать">
-      </form>
-    </secton>
-
-    <section>
+    <div class="catalog">
       <h2 class="visually-hidden">Сортировка товаров</h2>
       <div class="sort">
         <p class="sort-title">Сортировать:</p>
@@ -121,7 +120,7 @@
           <img src="http://placehold.it/358x578" width="358" height="578" alt="Изображение товара">
           <div>
             <a class="catalog-item-title" href="#">Barbershop</a>
-            <p class="catalog-item-description">Сайт салона красоты. Для мужчинб да.</p>
+            <p class="catalog-item-description">Сайт салона красоты. Для мужчин, да.</p>
             <button class="button catalog-item-button">9 900 Р</button>
           </div>
         </li>
@@ -160,7 +159,7 @@
         <li class="pagination-item"><a href="">3</a></li>
         <li class="pagination-item"><a href="">Следующая</a></li>
       </ul>
-    </section>
+    </div>
   </main>
 
   <footer class="page-footer main-footer">

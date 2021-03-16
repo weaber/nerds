@@ -435,6 +435,10 @@ main {
 
 /* Footer */
 
+.main-footer {
+  margin-top: 80px;
+}
+
 .contacts-container {
   padding: 54px 0;
   background-image: url("../img/map.png");
@@ -515,7 +519,17 @@ main {
   padding-top: 77px;
 }
 
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Filter */
+
+.filters {
+  width: 260px;
+  /* outline: 2px solid magenta; */
+}
 
 .filter-item {
   margin: 0;
@@ -616,9 +630,22 @@ main {
   line-height: 19px;
 }
 
+/* Catalog */
+
+.catalog {
+  margin: 0;
+  padding: 0;
+  width: 760px;
+  display: flex;
+  flex-direction: column;
+  /* outline: 2px solid green; */
+}
+
 /* Sort */
 
 .sort-title {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -638,11 +665,22 @@ main {
   list-style: none;
 }
 
-/* Catalog */
+/* Catalog List*/
 
 .catalog-list {
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0;
   list-style: none;
-  outline: 2px solid yellow;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  width: 358px;
+  margin-bottom: 30px;
+  /* outline: 2px solid blue; */
 }
 
 .catalog-item-title {
@@ -666,6 +704,8 @@ main {
 /* Pagination */
 
 .pagination-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -676,4 +716,10 @@ main {
   text-transform: uppercase;
 
   color: var(--basic-black);
+}
+
+/* Inner-page Footer  */
+
+.inner-page .main-footer {
+  margin-top: 60px;
 }
