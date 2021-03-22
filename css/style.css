@@ -31,6 +31,7 @@
   --toggle-color: #ABABAB;
 
   --catalog-item-description: #666666;
+  --special-opacity-white: rgba(255, 255, 255, 0.3);
 }
 
 /* Global */
@@ -657,14 +658,16 @@ main {
   background-color: var(--basic-grey);
 }
 
-.social-button:hover,
-.social-button:focus {
+.social-button:hover {
   background-color: var(--basic-red);
 }
 
-.social-button:active,
 .social-button:active {
   background-color: var(--basic-red-extra-dark);
+}
+
+.social-button:active path {
+  fill: var(--special-opacity-white);
 }
 
 .footer-benefits {
