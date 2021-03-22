@@ -504,7 +504,7 @@ main {
   width: 110px;
   margin-right: 5px;
 
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
 .promo-features:last-child {
@@ -570,54 +570,101 @@ main {
 
 .main-footer {
   margin-top: 80px;
+  padding-bottom: 68px;
 }
 
 .contacts-container {
   padding: 54px 0;
+  margin-bottom: 65px;
+
   background-image: url("../img/map.png");
-  background-size: 100%;
+  background-size: 1440px;
+  /* background-size: cover; */
   background-position: top center;
   background-repeat: no-repeat;
 }
 
 .contacts {
+  box-sizing: border-box;
   width: 320px;
   padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: var(--basic-white);
-}
 
-.сontacts p {
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.contacts p:nth-child(1) {
-  text-transform: uppercase;
-}
-
-.contacts a {
-  width: 220px;
+  /* outline: 1px solid yellowgreen; */
 }
 
 .contacts-title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  /* outline: 1px solid red; */
 }
 
-.page-footer .container {
+.contacts p {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contacts p:last-of-type {
+  margin-bottom: 35px;
+  /* outline: 1px solid green; */
+}
+
+.contacts a {
+  margin-top: 0;
+  width: 220px;
+}
+
+.socials {
   display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* outline: 1px solid green; */
 }
 
 .footer-socials {
+  display: flex;
+
   width: 400px;
   margin: 0;
   padding: 0;
   list-style: none;
+  /* outline: 1px solid yellowgreen; */
+}
+
+.socials-item {
+  margin-right: 10px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--basic-grey);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-red);
+}
+
+.social-button:active,
+.social-button:active {
+  background-color: var(--basic-red-extra-dark);
 }
 
 .footer-benefits {
@@ -625,8 +672,12 @@ main {
 }
 
 .footer-benefits p {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 700;
 }
 
 .footer-benefits span {
