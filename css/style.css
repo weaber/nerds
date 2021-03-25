@@ -90,6 +90,11 @@ img {
   background-color: var(--basic-red-extra-dark);
 }
 
+.button:disabled {
+  color: var(--basic-black);
+  background-color: var(--basic-smoky-white);
+}
+
 .button-green {
   background-color: var(--basic-green);
 }
@@ -734,10 +739,12 @@ main {
 
 .inner-page .main-header {
   padding-bottom: 110px;
+  margin-bottom: 55px;
 }
 
 .main-title {
   margin: 0 auto;
+  padding: 0;
   font-size: 55px;
   line-height: 55px;
   text-align: center;
@@ -753,7 +760,6 @@ main {
 
 .filters {
   width: 260px;
-  /* outline: 2px solid magenta; */
 }
 
 .filter-item {
@@ -766,6 +772,7 @@ main {
 .range-filter {
   width: 260px;
   margin-top: 49px;
+  margin-bottom: 55px;
 }
 
 .filter-item legend {
@@ -853,6 +860,120 @@ main {
 .filter-item label {
   font-size: 16px;
   line-height: 19px;
+  color: var(--basic-special-dark);
+}
+
+.grid-filter {
+  margin-bottom: 30px;
+}
+
+.grid-filter legend,
+.features-filter legend {
+  margin-bottom: 15px;
+}
+
+.grid-filter ul,
+.features-filter ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.grid-filter li,
+.features-filter li {
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+.grid-filter label,
+.features-filter label {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.input-filter-radio + label::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+
+  top: -2px;
+  left: -37px;
+
+  background-image: url("../img/radio-off.svg");
+  opacity: 0.4;
+}
+
+.input-filter-radio:checked + label::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+
+  top: -2px;
+  left: -37px;
+
+  background-image: url("../img/radio-on.svg");
+}
+
+.input-filter-radio:hover + label::before {
+  opacity: 1;
+}
+
+.input-filter-radio:disabled + label {
+  opacity: 0.1;
+}
+
+.features-filter {
+  margin-bottom: 35px;
+}
+
+.features-filter input {
+  display: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+
+  top: -2px;
+  left: -37px;
+
+  background-image: url("../img/checkbox-off.svg");
+  opacity: 0.4;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 23px;
+
+  top: -2px;
+  left: -37px;
+
+  background-image: url("../img/checkbox-on.svg");
+}
+
+input[type="checkbox"]:hover + label::before {
+  opacity: 1;
+}
+
+input[type="checkbox"]:disabled + label {
+  opacity: 0.1;
+}
+
+.filters-button {
+  width: 100%;
+  cursor: pointer;
 }
 
 /* Catalog */
@@ -868,7 +989,15 @@ main {
 
 /* Sort */
 
+.sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 49px;
+}
+
 .sort-title {
+  width: 360px;
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -878,17 +1007,28 @@ main {
 }
 
 .sort-type-list {
+  width: 270px;
+  margin: 0;
+  padding: 0;
+  display: flex;
   list-style: none;
 }
 
 .sort-type-item {
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .sort-order-list {
+  width: 40px;
+  margin: 0;
+  padding: 0;
+  display: flex;
   list-style: none;
 }
+
+
 
 /* Catalog List*/
 

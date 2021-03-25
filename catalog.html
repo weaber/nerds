@@ -51,29 +51,49 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="filter-item">
+          <fieldset class="filter-item grid-filter">
             <legend>Сетка:</legend>
-            <input name="grid" id="radio-1" type="radio" value="adaptive" checked>
-            <label for="radio-1">Адаптивная</label>
-            <input name="grid" id="radio-2" type="radio" value="fixed">
-            <label for="radio-2">Фиксированная</label>
-            <input name="grid" id="radio-3" type="radio" value="flex">
-            <label for="radio-3">Резиновая</label>
+            <ul>
+              <li>
+                <input class="visually-hidden input-filter-radio" name="grid" id="radio-1" type="radio" value="adaptive" checked>
+                <label for="radio-1">Адаптивная</label>
+              </li>
+              <li>
+                <input class="visually-hidden input-filter-radio" name="grid" id="radio-2" type="radio" value="fixed">
+                <label for="radio-2">Фиксированная</label>
+              </li>
+              <li>
+                <input class="visually-hidden input-filter-radio" name="grid" id="radio-3" type="radio" value="flex" disabled>
+                <label for="radio-3">Резиновая</label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="filter-item">
+          <fieldset class="filter-item features-filter">
             <legend>Особенности:</legend>
-            <input name="slide" id="check-1" type="checkbox" checked>
-            <label for="check-1">Слайдер</label>
-            <input name="advantages" id="check-2" type="checkbox">
-            <label for="check-2">Блок преимуществ</label>
-            <input name="news" id="check-3" type="checkbox" checked>
-            <label for="check-3">Новости</label>
-            <input name="gallery" id="check-4" type="checkbox">
-            <label for="check-4">Галерея</label>
-            <input name="cart" id="check-5"  type="checkbox">
-            <label for="check-5">Корзина</label>
+            <ul>
+              <li>
+                <input class="input-filter-checkbox" name="slide" id="check-1" type="checkbox" checked>
+                <label for="check-1">Слайдер</label>
+              </li>
+              <li>
+                <input name="advantages" id="check-2" type="checkbox">
+                <label for="check-2">Блок преимуществ</label>
+              </li>
+              <li>
+                <input name="news" id="check-3" type="checkbox" checked>
+                <label for="check-3">Новости</label>
+              </li>
+              <li>
+                <input name="gallery" id="check-4" type="checkbox">
+                <label for="check-4">Галерея</label>
+              </li>
+              <li>
+                <input name="cart" id="check-5"  type="checkbox" disabled>
+                <label for="check-5">Корзина</label>
+              </li>
+            </ul>
           </fieldset>
-          <input class="button" type="submit" value="Показать">
+          <input class="button filters-button" type="submit" value="Показать" disabled>
         </form>
       </secton>
     </div>
@@ -90,8 +110,8 @@
         </ul>
 
         <ul class="sort-order-list">
-          <li class="sort-order-item"><a href="">По убыванию</a></li>
-          <li class="sort-order-item"><a href="">По возрастанию</a></li>
+          <li class="sort-order-item"><a href="">У</a></li>
+          <li class="sort-order-item"><a href="">В</a></li>
         </ul>
       </div>
 
