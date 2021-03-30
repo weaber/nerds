@@ -40,6 +40,7 @@
 
   --catalog-item-description: #666666;
   --special-opacity-white: rgba(255, 255, 255, 0.3);
+  --catalog-sort-arrows: #A6A6A6;
 }
 
 /* Global */
@@ -562,6 +563,9 @@ main {
 }
 
 .partners-item {
+  /* display: flex;
+  align-content: center;
+  align-items: center; */
   position: relative;
   width: 260px;
   height: 90px;
@@ -927,7 +931,7 @@ main {
 }
 
 .input-filter-radio:disabled + label {
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 .features-filter {
@@ -968,7 +972,7 @@ input[type="checkbox"]:hover + label::before {
 }
 
 input[type="checkbox"]:disabled + label {
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 .filters-button {
@@ -1007,6 +1011,8 @@ input[type="checkbox"]:disabled + label {
 }
 
 .sort-type-list {
+  display: flex;
+  justify-content: space-between;
   width: 270px;
   margin: 0;
   padding: 0;
@@ -1014,10 +1020,21 @@ input[type="checkbox"]:disabled + label {
   list-style: none;
 }
 
-.sort-type-item {
+.link-sort {
   font-size: 14px;
   line-height: 18px;
+  color: var(--basic-black);
+  opacity: 0.3;
   text-transform: uppercase;
+}
+
+.link-sort:hover {
+  opacity: 0.6;
+}
+
+.link-sort:active,
+.link-sort_active {
+  opacity: 1;
 }
 
 .sort-order-list {
@@ -1025,10 +1042,59 @@ input[type="checkbox"]:disabled + label {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
   list-style: none;
 }
 
+.arrow-down, .arrow-up {
+  margin: 0;
+  padding: 0;
+  color: var(--basic-black);
+  position: relative;
 
+}
+
+.arrow-down::before {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 10px;
+  top: -15px;
+  left: 0;
+  background-image: url("../img/icon-down-dir.svg");
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.arrow-up::before {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 10px;
+  top: -15px;
+  left: -15px;
+  background-image: url("../img/icon-up-dir.svg");
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.arrow-down:hover::before {
+  opacity: 0.6;
+}
+
+.arrow-down:active::before {
+  opacity: 1;
+}
+
+.arrow-up:hover::before {
+  opacity: 0.6;
+}
+
+.arrow-up:active::before {
+  opacity: 1;
+}
 
 /* Catalog List*/
 
