@@ -618,18 +618,21 @@ main {
   padding-bottom: 68px;
 }
 
-.contacts-container {
-  padding: 54px 0;
+.map-block {
+  position: relative;
+  height: 416px;
   margin-bottom: 65px;
 
   background-image: url("../img/map.png");
   background-size: 1440px;
-  /* background-size: cover; */
   background-position: top center;
   background-repeat: no-repeat;
 }
 
 .contacts {
+  position: absolute;
+  top: 54px;
+
   box-sizing: border-box;
   width: 320px;
   padding-top: 50px;
@@ -637,7 +640,6 @@ main {
   padding-left: 50px;
   padding-right: 50px;
   background-color: var(--basic-white);
-
   /* outline: 1px solid yellowgreen; */
 }
 
