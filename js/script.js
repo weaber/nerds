@@ -11,3 +11,9 @@ modalCloseButton.addEventListener(`click`, (evt) => {
   evt.preventDefault();
   modal.classList.remove(`modal-show`);
 });
+
+window.addEventListener(`keydown`, (evt) => {
+  if (evt.key === `Escape`) {
+    modal.classList.remove(`modal-show`);
+  }
+});

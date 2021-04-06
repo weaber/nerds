@@ -1104,7 +1104,7 @@ input[type="checkbox"]:disabled + label {
 
 .catalog-list {
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 25px;
   padding: 0;
   list-style: none;
   display: flex;
