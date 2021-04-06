@@ -621,7 +621,7 @@ main {
 .map-block {
   position: relative;
   height: 416px;
-  margin-bottom: 65px;
+  margin-bottom: 75px;
 
   background-image: url("../img/map.png");
   background-size: 1440px;
