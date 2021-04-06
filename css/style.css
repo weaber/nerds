@@ -277,7 +277,7 @@ main {
   font-size: 0;
 
   transform: translateX(-50%);
-  z-index: 1000;
+  z-index: 20;
 }
 
 .slider-controls label {
@@ -1243,4 +1243,122 @@ input[type="checkbox"]:disabled + label {
 
 .inner-page .main-footer {
   margin-top: 60px;
+}
+
+/* Modal  */
+
+.modal {
+  display: none;
+  box-sizing: border-box;
+  width: 960px;
+  position: fixed;
+  bottom: 180px;
+  left: calc(50% - 480px);
+  background-color: var(--basic-white);
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 70px;
+  padding-bottom: 85px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 30;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-contacts {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.modal-contacts-name {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  width: 360px;
+}
+
+.modal-contacts-name label {
+  margin-bottom: 10px;
+}
+
+.modal-contacts-name input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  border: 2px solid var(--basic-grey-border);
+  border-radius: 3px;
+}
+
+.modal-contacts-email {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.modal-contacts-email label {
+  margin-bottom: 10px;
+}
+
+.modal-contacts-email input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  border: 2px solid var(--basic-grey-border);
+  border-radius: 3px;
+}
+
+.modal-feedback {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 47px;
+}
+
+.modal-feedback label {
+  margin-bottom: 10px;
+}
+
+.modal-feedback textarea{
+  box-sizing: border-box;
+  width: 760px;
+  height: 120px;
+  padding: 15px;
+  border: 2px solid var(--basic-grey-border);
+  border-radius: 3px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.modal-label-name,
+.modal-label-email,
+.modal-label-textarea {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.modal p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.button-modal {
+  width: 260px;
+}
+
+.modal-show {
+  display: block;
 }
