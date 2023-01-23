@@ -629,6 +629,10 @@ main {
   background-repeat: no-repeat;
 }
 
+iframe {
+  width: 100%;
+}
+
 .contacts {
   position: absolute;
   top: 54px;
@@ -1363,4 +1367,8 @@ input[type="checkbox"]:disabled + label {
 
 .modal-show {
   display: block;
+}
+
+.blank {
+  text-align: center;
 }
